@@ -1,1 +1,11 @@
-this is a text file with some text 
+command to clone a git repo in your computer:
+
+`git clone https://github.com/mInzamamMalik/RWSH-web-dev-batch-1.git`
+
+
+
+there are three commands to push repo to github:
+
+1. `git add .`
+2. `git commit -m "commit message"`
+3. `git push`
