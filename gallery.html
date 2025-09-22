@@ -2,9 +2,194 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iOS 26 — Overview</title>
+    <meta name="description"
+        content="Summary and features of iOS 26 — Liquid Glass design, Apple Intelligence, accessibility, supported devices, and release history." />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f1724;
+            --card: #0b1220;
+            --muted: #9aa7bf;
+            --accent: #46b3ff;
+            --glass: rgba(255, 255, 255, 0.06);
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+            margin: 0;
+            background: linear-gradient(180deg, #071022 0%, #071426 60%);
+            color: #e6eef8;
+            -webkit-font-smoothing: antialiased
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 36px auto;
+            padding: 24px
+        }
+
+        header {
+            display: flex;
+            gap: 18px;
+            align-items: center
+        }
+
+        .logo {
+            width: 64px;
+            height: 64px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #e6f7ff14, #ffffff0a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+            backdrop-filter: blur(6px)
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 20px;
+            color: var(--accent)
+        }
+
+        h2 {
+            color: #dff3ff;
+            margin: 0 0 8px
+        }
+
+        p.lead {
+            color: var(--muted);
+            margin: 8px 0 20px
+        }
+
+        nav {
+            margin-left: auto
+        }
+
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            margin-left: 14px;
+            font-weight: 600
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 20px;
+            align-items: start;
+            margin-top: 20px
+        }
+
+        .card {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+            padding: 20px;
+            border-radius: 14px;
+            box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+        }
+
+        .pill {
+            display: inline-block;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: var(--glass);
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 13px
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 18px
+        }
+
+        ul.clean {
+            padding-left: 18px;
+            margin: 0;
+            color: var(--muted)
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+            overflow: hidden
+        }
+
+        th,
+        td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            font-size: 14px;
+            color: #d6e8ff
+        }
+
+        th {
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+            font-weight: 700
+        }
+
+        footer {
+            color: var(--muted);
+            font-size: 13px;
+            margin-top: 28px;
+            text-align: center
+        }
+
+        .muted {
+            color: var(--muted);
+            font-size: 13px
+        }
+
+        .release {
+            font-family: monospace;
+            color: #cfefff
+        }
+
+        .toc {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px
+        }
+
+        .toc a {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 8px 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--muted);
+            font-weight: 600
+        }
+
+        @media (max-width:880px) {
+            .hero {
+                grid-template-columns: 1fr
+            }
+
+            .logo {
+                width: 56px;
+                height: 56px
+            }
+
+            .container {
+                padding: 16px
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -22,6 +207,289 @@
     <h1>this is gallery page</h1>
 
     <p>Welcome to the gallery page! Here you'll find a collection of images and artworks.</p>
+
+    <div id="sub-nav" class="container">
+        <header>
+            <div class="logo card" aria-hidden>
+                <h1>iOS 26</h1>
+            </div>
+            <div>
+                <div style="font-weight:800;font-size:18px">iOS 26 — Liquid Glass</div>
+                <div class="muted">Nineteenth major release of iOS — announced June 9, 2025 · released Sep 15, 2025
+                </div>
+            </div>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#app-level-changes">app-level-changes</a>
+                <a href="#devices">Supported devices</a>
+                <a href="#history">Release history</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" style="margin-top:22px">
+                <div class="card">
+                    <div style="display:flex;align-items:center;gap:12px">
+                        <span class="pill">Version 26</span>
+                        <div class="muted">Successor to iOS 18 — numbering changed for cross-platform consistency
+                        </div>
+                    </div>
+
+                    <h2 id="features">Overview & key features</h2>
+                    <p class="lead">iOS 26 introduces the Liquid Glass design language, expanded Apple Intelligence,
+                        accessibility improvements, Always‑On capabilities, and many refinements across system apps
+                        such as Camera, Messages, Music, and Wallet.</p>
+
+                    <div class="toc" aria-hidden>
+                        <a href="#ui">User interface</a>
+                        <a href="#ai">Apple Intelligence</a>
+                        <a href="#accessibility">Accessibility</a>
+                        <a href="#battery">Battery</a>
+                        <a href="#apps">Apps</a>
+                    </div>
+
+                    <div style="margin-top:18px" class="features">
+                        <div>
+                            <h3 id="ui">User interface</h3>
+                            <p class="muted">Liquid Glass: rounded translucent elements with motion-aware
+                                refraction, influenced by visionOS and echoing earlier skeuomorphic cues.</p>
+                        </div>
+                        <div>
+                            <h3 id="ai">Apple Intelligence</h3>
+                            <p class="muted">On-device models and integrations (including Visual Intelligence, Image
+                                Playground, and ChatGPT hooks). Live translation and Genmoji improvements.</p>
+                        </div>
+                        <div>
+                            <h3 id="accessibility">Accessibility</h3>
+                            <p class="muted">Reader Mode, Braille Access, Head Tracking pointer controls, and an
+                                audio equalizer with Comfort/Focus modes.</p>
+                        </div>
+                        <div>
+                            <h3 id="battery">Battery & AOD</h3>
+                            <p class="muted">Adaptive Power for heavy usage periods, estimated time to full charge
+                                on Lock Screen, and wallpaper blur for Always‑On Display.</p>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top:16px">Highlights</h3>
+                    <ul class="clean">
+                        <li>Lock Screen widgets at the bottom and dynamic time height based on background objects
+                            (with San Francisco font requirement).</li>
+                        <li>eSIM transfer directly with Android devices.</li>
+                        <li>Quantum‑secure TLS key exchange enabled by default.</li>
+                        <li>New Games app, enhanced Camera UX, and Notes call transcription + Markdown export.</li>
+                    </ul>
+
+                </div>
+
+                <aside class="card">
+                    <h3 style="margin-top:4px">Quick facts</h3>
+                    <table>
+                        <tr>
+                            <th>Announced</th>
+                            <td>June 9, 2025 (WWDC)</td>
+                        </tr>
+                        <tr>
+                            <th>Released</th>
+                            <td>September 15, 2025</td>
+                        </tr>
+                        <tr>
+                            <th>Minimum SoC</th>
+                            <td>Apple A13 Bionic</td>
+                        </tr>
+                        <tr>
+                            <th>Apple Intelligence</th>
+                            <td>Requires A17 Pro or newer</td>
+                        </tr>
+                        <tr>
+                            <th>Design</th>
+                            <td>Liquid Glass (systemwide)</td>
+                        </tr>
+                    </table>
+
+                    <div style="margin-top:12px">
+                        <div class="muted">Privacy & security</div>
+                        <ul class="clean">
+                            <li>Wired accessories permission</li>
+                            <li>Blocked contacts overview</li>
+                            <li>Recovery Assistant</li>
+                        </ul>
+                    </div>
+                </aside>
+            </section>
+
+            <section id="app-level-changes" class="card" id="apps" style="margin-top:18px">
+                <h2>App-level changes</h2> <a href="#sub-nav">goto top</a>
+                <div
+                    style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:10px">
+                    <div>
+                        <h3>Phone & Calls</h3>
+                        <p class="muted">Unified optional layout, call screening for unknown numbers, live
+                            translations in calls, and per-contact full call history.</p>
+                    </div>
+                    <div>
+                        <h3>Messages</h3>
+                        <p class="muted">Custom backgrounds, polls, partial message copy, and live translation for
+                            sending in another language.</p>
+                    </div>
+                    <div>
+                        <h3>Music</h3>
+                        <p class="muted">Pin favorites, translation/pronunciation of lyrics, AutoMix
+                            (beat-matching), and fullscreen artwork on Lock Screen.</p>
+                    </div>
+                    <div>
+                        <h3>Photos & Camera</h3>
+                        <p class="muted">3D wallpaper effects, new Camera UI, Lens Cleaning Hints, and HDR
+                            screenshots/recordings support.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card" id="accessibility" style="margin-top:18px">
+                <h2>Accessibility</h2>
+                <p class="muted">iOS 26 adds major features aimed at low-vision and blind users, including system
+                    Reader Mode and Braille Access (turning the device into a comprehensive braille notetaker),
+                    head-tracking pointer controls, and an improved audio equalizer.</p>
+            </section>
+
+            <section class="card" id="devices" style="margin-top:18px">
+                <h2>Supported devices</h2>
+                <p class="muted">Requires Apple A13 Bionic or newer. Apple Intelligence features require an A17 Pro
+                    or later.</p>
+
+                <table aria-describedby="devices-desc">
+                    <thead>
+                        <tr>
+                            <th>Device</th>
+                            <th>Supported</th>
+                            <th>Apple Intelligence</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>iPhone 11</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>iPhone 11 Pro & Pro Max</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>iPhone SE (2nd gen)</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>iPhone 12 / 12 Mini</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>iPhone 12 Pro / 12 Pro Max</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>iPhone 13 / 13 Mini</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>iPhone 13 Pro / Pro Max</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>iPhone SE (3rd gen)</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>iPhone 14 / 14 Plus</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>iPhone 14 Pro / Pro Max</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>iPhone 15 / 15 Plus</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>iPhone 15 Pro / Pro Max</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>iPhone 16 & variants</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>iPhone 17 / 17 Pro / Air</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="card" id="history" style="margin-top:18px">
+                <h2>Release history</h2>
+                <p class="muted">Summary of public release timeline and builds.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Version</th>
+                            <th>Build</th>
+                            <th>Release date</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>26.0</td>
+                            <td>23A330</td>
+                            <td class="release">September 19, 2025</td>
+                            <td>Preinstalled on iPhone 17, 17 Pro, and Air</td>
+                        </tr>
+                        <tr>
+                            <td>26.0</td>
+                            <td>23A341</td>
+                            <td class="release">September 15, 2025</td>
+                            <td>Developer release notes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="card" style="margin-top:18px">
+                <h2>Security & privacy notes</h2>
+                <ul class="clean">
+                    <li>Wired accessories permission controls when device is locked.</li>
+                    <li>Quantum‑secure TLS key exchange (TLS 1.3) enabled by default where supported by services.
+                    </li>
+                    <li>Recovery Assistant attempts automatic recovery on failed startups.</li>
+                </ul>
+            </section>
+
+        </main>
+
+        <footer>
+            <div>Built from user-provided summary. For edits or to export as a single HTML file, say "export" or
+                request changes.</div>
+        </footer>
+    </div>
+
+
+
+
 </body>
 
 </html>
