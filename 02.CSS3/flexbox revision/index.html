@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* background-image: url("images/background.jpg"); */
+        }
+
+        .header {
+            /* border: 2px solid brown; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .header>img {
+            /* border: 2px solid green */
+        }
+
+        .header>nav {
+            /* border: 2px solid green; */
+        }
+
+        .header ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            row-gap: 40px;
+            flex-wrap: wrap;
+        }
+
+
+
+        .header ul>li>a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            border: 2px solid pink;
+            padding: 10px 30px;
+        }
+
+        .content {
+            /* border: 2px solid red; */
+            display: flex;
+            margin-top: 1rem;
+        }
+
+        .left-section {
+            border: 2px solid blue;
+            padding: 20px;
+            flex-grow: 5;
+
+            /* From https://css.glass */
+            background: rgba(152, 255, 143, 0.36);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(9.7px);
+            -webkit-backdrop-filter: blur(9.7px);
+
+
+        }
+
+        .right-section {
+            border: 2px solid blue;
+            padding: 20px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="header">
+
+        <img src="./images/logo.png" alt="company logo" width="150px">
+
+        <nav>
+            <ul>
+                <li> <a href="#">home</a></li>
+                <li> <a href="#">contact</a></li>
+                <li> <a href="#">about</a></li>
+                <li> <a href="#">gallery</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="content">
+        <div class="left-section">
+            <h1>This is a Heading</h1>
+            <img src="./images/flower.jpg" alt="flower photo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur suscipit pariatur provident
+                assumenda labore praesentium eum accusantium soluta in. Quis, reiciendis doloremque. Ipsa dicta ut
+                mollitia odio laborum eos iste.</p>
+
+        </div>
+
+
+        <div class="right-section">
+            <h2>This is another heading</h2>
+
+            <!-- services -->
+            <ul>
+                <li>logo design</li>
+                <li>web dev</li>
+                <li>seo</li>
+                <li>marketing</li>
+                <li>consulting</li>
+                <li>Mobile apps</li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
