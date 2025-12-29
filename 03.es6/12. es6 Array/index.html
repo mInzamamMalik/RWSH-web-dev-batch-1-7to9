@@ -16,30 +16,85 @@
     <script>
 
 
-        let myNumber = 23; // 64bit
-        let myNumbers = [12, 45, 67]; // 64x3 = 192bit
+        // let myNumber = 23; // 64bit floating point number
+        // let myNumbers = [12, 45, 67]; // 64x3 = 192bit
 
-        console.log("myNumbers: ", myNumbers);
-        console.log("myNumbers: ", myNumbers[0] ); // 12
-        console.log("myNumbers: ", myNumbers[1] ); // 45
-        console.log("myNumbers: ", myNumbers[2] ); // 67
-
-
-        // myNumber = 63;
-        myNumbers[0] = 7
-        myNumbers[1] = 7
-        myNumbers[2] = 7
-
-        console.log("myNumbers: ", myNumbers);
+        // console.log("myNumbers: ", myNumbers);
+        // console.log("myNumbers: ", myNumbers[0] ); // 12
+        // console.log("myNumbers: ", myNumbers[1] ); // 45
+        // console.log("myNumbers: ", myNumbers[2] ); // 67
 
 
+        // // myNumber = 63;
+        // myNumbers[0] = 7
+        // myNumbers[1] = 7
+        // myNumbers[2] = 7
 
-        // let cityName = "New York";
-        // let cities = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix"];
+        // console.log("myNumbers: ", myNumbers[5]);
 
 
 
+        // // let cityName = "New York";
+        // // let cities = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix"];
 
+
+
+
+        // // adding removing elements at the end of es6 array
+        // let pets = ["cat", "dog", "elephant"];
+
+        // console.log("pets: ", pets);
+
+
+        // // pets[3] = "rabbit";
+
+        // pets.push("rabbit");
+        // pets.push("chicken");
+        // pets.push("goat");
+
+        // console.log("pets after push: ", pets);
+
+
+        // pets.pop();
+        // pets.pop();
+        // pets.pop();
+
+        // console.log("pets after pop:", pets);
+
+
+
+
+
+        // // adding removing elements at the start of es6 array
+        // let pets = ["cat", "dog", "elephant"];
+
+        // console.log("pets: ", pets);
+
+        // pets.unshift("rabbit");
+        // pets.unshift("chicken");
+        // pets.unshift("goat");
+
+        // console.log("pets after unshift: ", pets);
+
+        // pets.shift();
+        // pets.shift();
+        // pets.shift();
+
+        // console.log("pets after shift: ", pets);
+
+
+
+        // adding removing elements at specific index of es6 array
+        let pets = ["cat", "dog", "elephant"];
+
+        console.log("pets: ", pets);
+
+        // pets.splice(1, 1, "rabbit"); // this will remove dog and add rabbit at index 1
+        // pets.splice(1, 1, "rabbit", "chicken", "goat"); // this will remove dog and add rabbit, chicken, goat at index 1
+        // pets.splice(1, 0, "rabbit", "chicken", "goat"); // this will add rabbit, chicken, goat at index 1 without removing any element
+        pets.splice(1, 1); // this will remove dog at index 1 without adding any element
+
+        console.log("pets after splice: ", pets);
 
     </script>
 </body>

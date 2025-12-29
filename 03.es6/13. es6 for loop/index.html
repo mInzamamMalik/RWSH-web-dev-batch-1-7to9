@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>
+        es6 for loop
+    </h1>
+
+    <script>
+
+        // //   one of many loop statements in javascript is for loop, map, filter, reduce, foreach, for..in, for..of etc
+
+        // //   initialization; condition; increment/decrement
+        // for ( let i = 0;        i < 100000;          i++) {
+
+        //     console.log("index: ", i);
+
+        // }
+
+
+        // // 1st complete cycle
+        // //    init => condition => body => increment/decrement
+        // // 2nd cycle
+        // //    condition => body => increment/decrement
+        // // 3rd cycle
+        // //    condition => body => increment/decrement
+        // // 4th cycle
+        // //    condition => body => increment/decrement
+        // // 5th cycle
+        // //    condition => body => increment/decrement
+        // // 6th cycle
+        // //    condition => loop ends because condition is false
+
+
+        // // index: 0 
+        // // index: 1 
+        // // index: 2
+        // // index: 3
+        // // index: 4
+
+
+
+
+        // all three parameters of for loop are optional
+
+        // let i = 0;
+
+        // for (     ;  i<10   ;     ) {
+        //     console.log("index: ", i);
+        //     i++;
+        // }
+
+
+
+
+        // // loop interruption with break statement
+
+        // let i = 0;
+
+        // for (; ;) {    
+        //     if (i === 5) {
+        //         break;
+        //     }
+        //     console.log("body: ", i);
+        //     i++;
+        // }
+
+
+
+
+
+        // search array with loop and break
+
+        const fruits = ["apple", "banana", "orange", "grape", "mango"];
+        // console.log("array length: ", fruits.length); // array length is 1 base number
+
+
+        // flag variable
+        let isFound = false; // boolean flag
+
+        for (let i = 0; i < fruits.length; i++) {
+
+            if (fruits[i] === "orange") {
+                console.log("fruit found on index: ", i);
+                isFound = true;
+                break;
+            }
+            console.log("index: ", i);
+            console.log("fruit: ", fruits[i]);
+        }
+
+        if (isFound === false) {
+            console.log("fruit not found in array");
+        }
+
+
+
+    </script>
+</body>
+
+</html>
