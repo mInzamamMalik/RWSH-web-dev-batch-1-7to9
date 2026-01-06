@@ -36,12 +36,31 @@
 
 
 
-        let text = "we live in a yellow submarine. we don't have in anything else.";
+        // let text = "have in anything else."; // string of charecters
 
-        let result = text.lastIndexOf("in");
+        // // let result = text.indexOf("in"); // 8
+        // let result = text.lastIndexOf(" in "); // 43
 
-        console.log('result: ', result);
+        // console.log('result: ', result);
 
+        // let text = "an immutable string";
+
+        // // text = "dfsfsdf"; // can not be changed, but replace
+
+        // let newString = text.slice(0, 3) + text.slice(13);
+
+        // console.log('newString: ', newString); // "an string"
+
+
+
+        // replace method - the impact of immutability
+        let text = "Please visit Microsoft and Microsoft!";
+
+
+        let newText = text.replace(/Microsoft/g, "W3Schools");
+        
+        console.log('original text: ', text); // "Please visit Microsoft and Microsoft!"
+        console.log('newText: ', newText); // "Please visit W3Schools and
 
 
 
