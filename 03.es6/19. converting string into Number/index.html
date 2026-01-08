@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>
+        Converting String into Number
+    </h1>
+    <form>
+        <input type="text" id="input1">
+    </form>
+
+    <script>
+
+        let userInput = "12345.38"; // string;
+
+        // let userInputInInteger = parseInt(userInput); // converting string into integer number
+
+        let userInputInInteger = parseFloat(userInput); // converting string into integer number
+
+        // let userInputNumber = Number(userInput); // converting string into number
+
+
+
+        let totalPrice = undefined; // initial value;
+
+        let finalPrice = totalPrice + userInputInInteger;
+        // null + 12345.38 = 12345.38
+        // set null incase price can not be calulated
+        // undefined + 12345.38 = NaN
+
+
+        if (totalPrice === undefined) {
+            console.log('the value never changed');
+            alert('something went wrong when calculating final price');
+
+        }
+        if (totalPrice === null) {
+            console.log('price can not be caluated');
+            alert('something went wrong when calculating final price');
+
+        }
+
+
+
+        // a javascript variable can hold
+        // 4) null (pakka pakka falsy value)
+        // 5) undefined (pakka pakka falsy value)
+        // 6) NaN (pakka pakka falsy value)
+        // 3) Boolean ( if true then truthy, if false then falsy value)
+        // 1) Number (only zero is falsy value)
+        // 8) BigInt (https://chatgpt.com/share/695e7090-d754-8006-a72d-6585c5ccdba9)
+        // 2) String (only empty string is falsy value)
+        // 7) Object (pakka pakka truthy value)
+        // 9) function
+        // 11)  
+
+
+
+    </script>
+</body>
+
+</html>
