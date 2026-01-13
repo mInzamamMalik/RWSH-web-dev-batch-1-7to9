@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1> es6 Date and Time</h1>
+
+
+    <script>
+
+        let rightNow = new Date();
+        console.log("rightNow: ", rightNow);
+
+        let day = rightNow.getDay(); // 0 - 6 (0 = Sunday, 1 = Monday, .... 6 = Saturday)
+
+        console.log("day: ", day);
+
+        // if(day === 0){
+        //     console.log("Today is Sunday");
+        // } else if(day === 1){
+        //     console.log("Today is Monday");
+        // } else if(day === 2){
+        //     console.log("Today is Tuesday");
+        // } else if(day === 3){
+        //     console.log("Today is Wednesday");
+        // } else if(day === 4){
+        //     console.log("Today is Thursday");
+        // } else if(day === 5){
+        //     console.log("Today is Friday");
+        // } else if(day === 6){
+        //     console.log("Today is Saturday");
+
+        // }
+
+        let dayNames = [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+        ];
+        console.log("Today is: ", dayNames[day]);
+
+
+
+
+
+    </script>
+</body>
+
+</html>
