@@ -14,12 +14,12 @@
 
     <script>
 
-        let rightNow = new Date();
-        console.log("rightNow: ", rightNow);
+        // let rightNow = new Date();
+        // console.log("rightNow: ", rightNow);
 
-        let day = rightNow.getDay(); // 0 - 6 (0 = Sunday, 1 = Monday, .... 6 = Saturday)
+        // let day = rightNow.getDay(); // 0 - 6 (0 = Sunday, 1 = Monday, .... 6 = Saturday)
 
-        console.log("day: ", day);
+        // console.log("day: ", day);
 
         // if(day === 0){
         //     console.log("Today is Sunday");
@@ -38,16 +38,67 @@
 
         // }
 
-        let dayNames = [
-            "Sunday",
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-        ];
-        console.log("Today is: ", dayNames[day]);
+        // let dayNames = [
+        //     "Sunday",
+        //     "Monday",
+        //     "Tuesday",
+        //     "Wednesday",
+        //     "Thursday",
+        //     "Friday",
+        //     "Saturday"
+        // ];
+        // console.log("Today is: ", dayNames[day]);
+
+
+
+
+        // let rightNow = new Date();
+        // console.log("rightNow: ", rightNow);    
+
+        // // H:MM:SS AM/PM
+
+        // let hour = rightNow.getHours();
+        // let minute = rightNow.getMinutes();
+        // let seconds = rightNow.getSeconds();
+        // let ampm = "";
+
+        // if(hour => 12){
+        //     ampm = "PM";
+        // }else{
+        //     ampm = "AM";
+        // }
+
+        // if(hour > 12){
+        //     hour = hour - 12;
+        // }
+        // if(hour === 0){
+        //     hour = 12;
+        // }
+
+        // console.log(`current time is =>  ${hour}:${minute}:${seconds} ${ampm}`);
+
+
+
+        let today = new Date();
+
+        let doomsday = new Date("June 30, 2035");
+        console.log("doomsday: ", doomsday);
+
+
+        let msToday = today.getTime();
+        let msDoomsday = doomsday.getTime();
+
+        let msDiff = msDoomsday - msToday;
+
+        // let days = msDiff / 1000 / 60 / 60 / 24;
+        let days = msDiff / (1000 * 60 * 60 * 24);
+
+        console.log(`${days} days left in dooms day`);
+
+
+
+
+
 
 
 
