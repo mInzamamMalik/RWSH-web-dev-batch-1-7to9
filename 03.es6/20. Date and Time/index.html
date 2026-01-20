@@ -79,21 +79,60 @@
 
 
 
-        let today = new Date();
+        // let today = new Date();
 
-        let doomsday = new Date("June 30, 2035");
-        console.log("doomsday: ", doomsday);
+        // let doomsday = new Date("June 30, 2035");
+        // console.log("doomsday: ", doomsday);
 
 
-        let msToday = today.getTime();
-        let msDoomsday = doomsday.getTime();
+        // let msToday = today.getTime();
+        // let msDoomsday = doomsday.getTime();
 
-        let msDiff = msDoomsday - msToday;
+        // let msDiff = msDoomsday - msToday;
 
-        // let days = msDiff / 1000 / 60 / 60 / 24;
-        let days = msDiff / (1000 * 60 * 60 * 24);
+        // // let days = msDiff / 1000 / 60 / 60 / 24;
+        // let days = msDiff / (1000 * 60 * 60 * 24);
 
-        console.log(`${days} days left in dooms day`);
+        // console.log(`${days} days left in dooms day`);
+
+
+        // setting elements of date time
+
+        let now = new Date();
+
+        console.log("now: ", now);
+
+        // now.setFullYear(2003);
+        // now.setMonth(2)
+        // now.setDate(23)
+        
+        // now.setDate(12)
+        // now.setMonth(10)
+        // now.setFullYear(2005);
+        
+        // now.setDate(15)
+        // now.setMonth(3)
+        // now.setFullYear(2006);
+
+        // now.setDate(31)
+        // now.setMonth(0)
+        // now.setFullYear(2003);
+
+        // let currentHour = now.getHours();
+        // now.setHours(currentHour + 10);
+
+
+        // now.setHours(100);
+
+        // now.setMinutes(120);
+
+        // now.setMonth(24);
+
+
+        now.setMilliseconds(300000); // milis in 5 minutes
+
+        console.log("now: ", now);
+
 
 
 
