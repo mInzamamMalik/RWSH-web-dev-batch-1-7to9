@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>
+        es6 Object
+    </h1>
+
+    <script>
+
+
+        // let myNumbers = [12, 45, 67]; // 64x3 = 192bit
+
+        // console.log("myNumbers: ", myNumbers[0] ); // 12
+        // console.log("myNumbers: ", myNumbers[1] ); // 45
+        // console.log("myNumbers: ", myNumbers[2] ); // 67
+
+
+        // // myNumber = 63;
+        // myNumbers[0] = 7
+        // myNumbers[1] = 7
+        // myNumbers[2] = 7
+
+        // console.log("myNumbers: ", myNumbers[5]);
+
+
+
+        // let cityName = "New York";
+        // let cities = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix"];
+
+
+        // const student = {
+        //     name: "John",
+        //     age: 20,
+        //     grade: "A"
+        // }
+
+        // // console.log("student name: ", student["name"]);
+        // // console.log("student age: ", student["age"]);
+        // // console.log("student grade: ", student["grade"]);
+
+        // console.log("student name: ", student.name); // dot notation
+        // console.log("student age: ", student.age);
+        // console.log("student grade: ", student.grade);
+
+        // // student["name"] = "Alice";
+        // // student["age"] = 21;
+        // // student["grade"] = "A+";
+
+        // student.name = "Alice"; // dot notation
+        // student.age = 21;
+        // student.grade = "A+";
+
+
+        // console.log("student: ", student);
+
+
+
+
+
+        // let student1 = {
+        //     name: "John",
+        //     age: 20,
+        //     grade: "A"
+        // }
+
+        // // let student2 = student1; // reference copy
+        // let student2 = { ...student1 }; // deep copy or cloning
+
+
+        // console.log("student1: ", student1);
+        // console.log("student2: ", student2);
+        
+        
+        // student2.name = "Alice";
+        // student2.age = 21;
+        // student2.grade = "A+";
+        
+        // console.log("student1: ", student1);
+        // console.log("student2: ", student2);
+
+
+
+
+
+
+        let pets1 = ["cat", "dog", "elephant"];
+
+        // let pets2 = pets1; // reference copy
+        let pets2 = [...pets1]; // deep copy or cloning
+
+        console.log("pets1: ", pets1);
+        console.log("pets2: ", pets2);
+
+        pets2[0] = "rabbit";
+        pets2[1] = "chicken";
+        pets2[2] = "goat";
+
+        console.log("pets1 after modification: ", pets1);
+        console.log("pets2 after modification: ", pets2);
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1> es6 Functions</h1>
+
+
+    <script>
+
+        // function firstFunction(){
+        //     console.log("This is my first function");
+        // }
+
+        // firstFunction();
+        // firstFunction();
+        // firstFunction();
+        // firstFunction();
+        // firstFunction();
+
+
+        // // named function
+        // function firstFunction(){ 
+
+        // }
+        // // named function in variable
+        // const secondFunction1 = function secondFunction(){ 
+
+        // }
+        // // anonymous function
+        // const thirdFunction = function(){
+
+        // };
+
+        // // Arrow function in variable (es6 only)
+        // const fourthFunction = () => {
+        //     console.log("This is my fourth function - arrow function");
+        // };
+
+        // fourthFunction();
+        // fourthFunction();
+
+
+
+
+        // Arrow function with parameters
+        const addTwoNumbers = (num1, num2) => {
+
+            console.log("start time: ", new Date().getTime());
+
+            if (isNaN(num1) || isNaN(num2)) {
+                console.log("Invalid input(s). Please provide valid numbers.");
+                return null;
+            }
+
+            if (num1 === undefined) {
+                num1 = 0;
+            }
+            if (num2 === undefined) {
+                num2 = 0;
+            }
+            if (typeof num1 !== "number") {
+                num1 = Number(num1);
+            }
+            if (typeof num2 !== "number") {
+                num2 = Number(num2);
+            }
+
+            console.log("Adding two numbers: ", num1, num2);
+            const sum = num1 + num2;
+            console.log("Sum is: " + sum);
+            console.log("abc is: ", abc);
+
+            console.log("end time: ", new Date().getTime());
+            return sum;
+        };
+
+
+        let abc = 3;
+
+        addTwoNumbers("12", "15");
+
+
+        // console.log("returned value: ", addTwoNumbers(20, 30));
+
+        // const returnedValue = addTwoNumbers(50, 70);
+        // console.log("returned value: ", returnedValue);
+
+
+        // varibale scope
+
+
+
+    </script>
+</body>
+
+</html>
